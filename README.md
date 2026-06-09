@@ -2,59 +2,36 @@
 
 [![Streamlit App](https://static.streamlit.io/badge-gradient-gradient.svg)](YOUR_STREAMLIT_APP_LINK_HERE)
 
-An End-to-End Machine Learning project designed to predict whether a patient has a high or low risk of heart disease based on clinical parameters. This repository contains the complete machine learning pipeline, from data preprocessing and feature engineering to deploying the final model as an interactive web application.
+An End-to-End Machine Learning project designed to predict heart disease risk using patient clinical data. This project includes a complete pipeline from data processing to a live web application deployment.
 
 ---
 
-## 🚀 Live Application
-You can test the live interactive app and input patient data here:
-👉 **[Open the Live Streamlit App](YOUR_STREAMLIT_APP_LINK_HERE)**
+## 🚀 Live Demo
+Experience the application here: 
+👉 **[Heart Disease Prediction App](YOUR_STREAMLIT_APP_LINK_HERE)**
 
 ---
 
-## 📌 Project Architecture & Pipeline
+## 📌 Project Features
+The model analyzes 10 specific clinical features to determine risk levels:
 
-The project follows a structured data science workflow to ensure robust and clinical-grade predictions:
-
-1. **Exploratory Data Analysis (EDA):** Analyzed risk factors, distributions, and clinical correlations within the dataset.
-2. **Feature Engineering:** Created domain-specific interaction features (e.g., `Age × Resting Blood Pressure Risk Factor`) to capture non-linear relationships that enhance model accuracy.
-3. **Data Normalization:** Applied robust feature scaling using `StandardScaler` to ensure all continuous medical metrics are on the same scale before feeding them into the classifier.
-4. **Model Deployment:** Exported the trained pipeline (`best_heart_model.pkl` & `scaler.pkl`) and developed a production-ready user interface using **Streamlit**.
-
----
-
-## 📊 Model Features & Inputs
-
-The Streamlit application takes real-time patient inputs for the following clinical features:
-
-* **Age:** Patient's age (1–120).
-* **Sex:** Categorical (Male/Female).
-* **Resting Blood Pressure:** Resting blood pressure in mm Hg.
-* **Cholesterol:** Serum cholesterol in mg/dl.
-* **Fasting Blood Sugar:** Fasting blood sugar > 120 mg/dl (Yes/No).
-* **Max Heart Rate:** Maximum heart rate achieved during exercise.
-* **Age-BP Risk Factor:** An engineered interaction feature (`Age` × `Resting Blood Pressure`) representing cumulative cardiovascular stress over time.
+* **Patient Profile:** Age and Sex.[cite: 1]
+* **Clinical Metrics:** Resting Blood Pressure, Cholesterol, and Maximum Heart Rate.[cite: 1]
+* **Diagnostic Tests:** Fasting Blood Sugar (> 120 mg/dl).[cite: 1]
+* **Feature Engineering:** Includes an `Age-BP Risk` factor (Age × Resting Blood Pressure) to capture combined cardiovascular stress.[cite: 1]
 
 ---
 
-## 🏆 Model Evaluation
-
-Multiple classification models were tested and optimized. Since this is a medical diagnosis task, the evaluation focused heavily on **Recall (Sensitivity)** to ensure that high-risk patients are not missed (minimizing False Negatives).
-
-| Model | Accuracy | Precision | Recall (Sensitivity) | F1-Score |
-| :--- | :---: | :---: | :---: | :---: |
-| **Baseline Classifier** | 0.XX | 0.XX | 0.XX | 0.XX |
-| **Optimized Classifier (Final)** | **0.XX** | **0.XX** | **0.XX** | **0.XX** |
-
-*(Note: Please update the `0.XX` placeholders with the exact metrics from your `ml_proj.ipynb` notebook).*
+## 🛠️ Technical Workflow
+1. **Preprocessing:** Data is normalized using a `StandardScaler` to ensure prediction accuracy.[cite: 1]
+2. **Model:** A pre-trained Machine Learning model (`best_heart_model.pkl`) is used for classification.[cite: 1]
+3. **Deployment:** Built with **Streamlit** for an interactive, user-friendly interface.[cite: 1]
 
 ---
 
-## 💻 Local Installation & Setup
+## 📊 How to Run Locally
 
-To run the application locally on your machine, execute the following commands in your terminal:
-
-### 1. Clone the Repository
+### 1. Clone the project
 ```bash
 git clone [https://github.com/sara2005-so/ml-project.git](https://github.com/sara2005-so/ml-project.git)
 cd ml-project
