@@ -11,12 +11,12 @@
 ## 📌 Project Overview
 This project focuses on predicting the likelihood of heart disease in patients using automated clinical metrics. By analyzing key health indicators, we implemented a complete Machine Learning pipeline and deployed a live, interactive web application for real-time predictions.
 
-🎯 **Live Web Application:** [Click Here to Access the App](https://ml-project-tfnfjrbs2eifrx9qwt5rcn.streamlit.app/)
+🎯 **Live Web Application: https://ml-project-tfnfjrbs2eifrx9qwt5rcn.streamlit.app/ 
 
 ---
 
 ## 📺 Video Demonstration
-[![YouTube Video Demo](https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)](ضع_رابط_الفيديو_هنا_بين_الأقواس)
+The Demo:
 
 ---
 
@@ -84,8 +84,3 @@ Validation was highly prioritized to ensure reliability on unseen data. The fina
 
 * Developed with care as part of the final Biotechnology Informatics project.
 * Special thanks to the evaluation team and my academic colleagues.
-
-```
-
-
-```
