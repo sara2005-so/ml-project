@@ -3,7 +3,7 @@
 An end-to-end Machine Learning project designed to predict the likelihood of heart disease and deployed as an interactive, production-ready web application.
 
 ## 🚀 Live Web App
-Experience the live interactive application here: [Insert Your Streamlit App Link Here](https://your-app-url.streamlit.app)
+Experience the live interactive application here: https://ml-project-tfnfjrbs2eifrx9qwt5rcn.streamlit.app/
 
 ---
 
