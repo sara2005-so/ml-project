@@ -1,46 +1,83 @@
-# ❤️ Heart Disease Prediction Project
+```markdown
+# 📊 Heart Disease Prediction Classification Project
 
-An end-to-end Machine Learning project designed to predict the likelihood of heart disease and deployed as an interactive, production-ready web application.
-
-## 🚀 Live Web App
-Experience the live interactive application here: https://ml-project-tfnfjrbs2eifrx9qwt5rcn.streamlit.app/
-
----
-
-## 📌 Project Pipeline
-
-### 1. Exploratory Data Analysis (EDA)
-- Analyzed dataset characteristics using over 5 distinct visualization types across 6 core medical variables.
-- Investigated feature distributions, correlations, and successfully identified statistical outliers.
-
-### 2. Data Cleaning & Preprocessing
-- Addressed clinical anomalies (such as irrational zero values in Cholesterol and RestingBP) by imputing them with the feature **Median**.
-- Encoded categorical variables into numerical formats using `LabelEncoder`.
-- Normalized numerical features via `StandardScaler` to optimize distance-based algorithm performance.
-
-### 3. Feature Engineering & Selection
-- **Feature Engineering:** Developed a domain-specific feature (`BP_Category`) to classify blood pressure into clinical sub-types.
-- **Feature Selection:** Implemented a **Filter Method** based on a Pearson correlation matrix to isolate and select the top 11 most predictive features.
-
-### 4. Model Training & Hyperparameter Tuning
-- Evaluated 3 distinct classification algorithms: Logistic Regression, Support Vector Machines (SVM), and Random Forest.
-- Performed rigorous hyperparameter optimization via `GridSearchCV` using 5-Fold Cross-Validation, specifically optimizing for **Recall** to minimize critical false negatives.
-
-### 5. Validation & Evaluation
-- Utilized an 80/20 Train/Test split protocol to ensure strict validation principles and safeguard the model against **Overfitting**.
-- The finalized Random Forest model achieved robust classification metrics (Precision, Recall, and F1-Score) comfortably exceeding project benchmarks.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Streamlit-Live-red.svg" alt="Streamlit App">
+  <img src="https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg" alt="Model">
+</p>
 
 ---
 
-## 🛠️ Tech Stack
-- **Language:** Python
-- **Data & ML Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Joblib
-- **Deployment & UI:** Streamlit Cloud
+## 📌 Project Overview
+This project focuses on predicting the likelihood of heart disease in patients using automated clinical metrics. By analyzing key health indicators, we implemented a complete Machine Learning pipeline and deployed a live, interactive web application for real-time predictions.
+
+🎯 **Live Web Application:** [Click Here to Access the App](https://ml-project-tfnfjrbs2eifrx9qwt5rcn.streamlit.app/)
 
 ---
 
-## 📁 Repository Structure
-- `heart.csv` - The raw clinical dataset.
-- `Final_Project.ipynb` - Jupyter Notebook containing complete EDA, preprocessing, and model training workflows.
-- `app.py` - Core Streamlit web application source code.
-- `*.pkl` - Serialized artifacts including the final trained model, scaler, and categorical encoders.
+## 📂 Repository Structure
+```text
+├── heart.csv                   # Original Dataset
+├── heart_disease_model.pkl     # Trained Random Forest Model
+├── scaler.pkl                  # Saved StandardScaler
+├── *_encoder.pkl               # Saved LabelEncoders for categorical features
+├── Final_Project.ipynb             # Jupyter Notebook (EDA, Training & Tuning)
+├── app.py                          # Streamlit Application Source Code
+├── requirements.txt                # Production Dependencies
+└── README.md                       # Project Documentation
+
+```
+
+---
+
+## 🛠️ Machine Learning Pipeline
+
+### 1. Data Exploration (EDA) & Cleaning
+
+* Investigated **6 key variables** using both univariate and bivariate analysis.
+* Included **5 different kinds of plots** (Histograms, Box plots, Correlation Heatmaps, etc.) to detect distributions and outliers.
+* Handled non-logical missing values (zeros in Cholesterol and Blood Pressure) by replacing them with the **Median**.
+
+### 2. Feature Engineering & Selection
+
+* **Feature Engineering:** Created a new feature `BP_Category` to classify blood pressure stages.
+* **Feature Selection:** Applied **Filter Methods** using correlation matrices to select the top 11 most significant features.
+
+### 3. Model Training & Parameter Tuning
+
+We attempted **3 different algorithms** and compared their performance:
+
+* Logistic Regression
+* Support Vector Machine (SVM)
+* **Random Forest Classifier** *(Best Performing Model)*
+
+> **Parameter Tuning:** Implemented `GridSearchCV` on the Random Forest model to tune hyperparameters, optimizing the model against overfitting and boosting precision.
+
+---
+
+## 📊 Evaluation & Validation Results
+
+### Model Performance
+
+Validation was highly prioritized to ensure reliability on unseen data. The final Random Forest model achieved evaluation metrics (Precision & Recall) significantly exceeding the 0.3 project threshold.
+
+| Metric | Score | Status |
+| --- | --- | --- |
+| **Precision** | > 0.80 | ✅ Passed |
+| **Recall** | > 0.80 | ✅ Passed |
+| **Validation Threshold** | 0.30 | 🚀 Exceeded |
+
+---
+
+## 💻 Tech Stack & Libraries
+
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Joblib
+* **Deployment:** Streamlit Community Cloud
+
+---
+
+## 👥 Collaborators & Acknowledgments
+* Developed with care as part of the final Biotechnology Informatics project.
+* Special thanks to the evaluation team and my academic colleagues.
