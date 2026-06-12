@@ -1,10 +1,21 @@
 # 📊 Heart Disease Prediction Classification Project
 
-<p align="center">
-  <img src="[https://img.shields.io/badge/Python-3.9+-blue.svg](https://img.shields.io/badge/Python-3.9+-blue.svg)" alt="Python Version">
-  <img src="[https://img.shields.io/badge/Streamlit-Live-red.svg](https://img.shields.io/badge/Streamlit-Live-red.svg)" alt="Streamlit App">
-  <img src="[https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg](https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg)" alt="Model">
-</p>
+## 📑 Introduction & Background
+Cardiovascular diseases (CVDs) remain the leading cause of mortality globally, accounting for millions of deaths annually. Early and accurate detection of heart conditions is critical for effective clinical intervention. This project leverages Machine Learning to analyze key biomedical features and physiological indicators, establishing an automated decision-support system that assists healthcare professionals in early screening and risk assessment.
+
+## 📊 Dataset Specifications
+The predictive model is trained on a comprehensive heart disease dataset containing **918 patient observations** with **12 clinical attributes**. The dataset bridges demographic data with vital cardiovascular measurements:
+* **Demographic Metrics:** Age, Sex.
+* **Clinical Symptoms:** ChestPainType (TA, ATA, NAP, ASY), ExerciseAngina (Y/N).
+* **Cardiovascular Vitals:** RestingBP (Blood Pressure), Cholesterol, FastingBS (Blood Sugar).
+* **Electrocardiogram (ECG) Results:** RestingECG (Normal, ST, LVH), MaxHR (Maximum Heart Rate), Oldpeak, and ST_Slope.
+* **Target Class:** `HeartDisease` (1: Presence of heart disease, 0: Normal).
+
+## 💻 Web Application Features
+The system is deployed as an interactive clinical web application using the **Streamlit** framework. 
+* **User-Centric UI:** Allows users or medical practitioners to input patient metrics via intuitive sliders and dropdown menus.
+* **Real-time Pipeline Processing:** Raw inputs are seamlessly transformed using pre-trained `StandardScaler` and `LabelEncoder` objects before evaluation.
+* **Instant Risk Probability:** Explores the underlying Random Forest probabilities to output a definitive diagnostic prediction along with a visual health alert status (Red for Alert, Green for Normal).
 
 ---
 
