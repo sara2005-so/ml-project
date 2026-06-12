@@ -1,10 +1,9 @@
-```markdown
 # 📊 Heart Disease Prediction Classification Project
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/Streamlit-Live-red.svg" alt="Streamlit App">
-  <img src="https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg" alt="Model">
+  <img src="[https://img.shields.io/badge/Python-3.9+-blue.svg](https://img.shields.io/badge/Python-3.9+-blue.svg)" alt="Python Version">
+  <img src="[https://img.shields.io/badge/Streamlit-Live-red.svg](https://img.shields.io/badge/Streamlit-Live-red.svg)" alt="Streamlit App">
+  <img src="[https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg](https://img.shields.io/badge/Machine_Learning-Random_Forest-green.svg)" alt="Model">
 </p>
 
 ---
@@ -17,7 +16,9 @@ This project focuses on predicting the likelihood of heart disease in patients u
 ---
 
 ## 📺 Video Demonstration
-The Demo: (https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)
+[![YouTube Video Demo](https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)](ضع_رابط_الفيديو_هنا_بين_الأقواس)
+
+---
 
 ## 📂 Repository Structure
 ```text
@@ -25,12 +26,12 @@ The Demo: (https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-bad
 ├── heart_disease_model.pkl     # Trained Random Forest Model
 ├── scaler.pkl                  # Saved StandardScaler
 ├── *_encoder.pkl               # Saved LabelEncoders for categorical features
-├── Final_Project.ipynb             # Jupyter Notebook (EDA, Training & Tuning)
-├── app.py                          # Streamlit Application Source Code
-├── requirements.txt                # Production Dependencies
-└── README.md                       # Project Documentation
+├── Final_Project.ipynb         # Jupyter Notebook (EDA, Training & Tuning)
+├── app.py                      # Streamlit Application Source Code
+├── requirements.txt            # Production Dependencies
+└── README.md                   # Project Documentation
 
-
+```
 
 ## 🛠️ Machine Learning Pipeline
 
@@ -80,5 +81,11 @@ Validation was highly prioritized to ensure reliability on unseen data. The fina
 ---
 
 ## 👥 Collaborators & Acknowledgments
+
 * Developed with care as part of the final Biotechnology Informatics project.
 * Special thanks to the evaluation team and my academic colleagues.
+
+```
+
+
+```
