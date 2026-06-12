@@ -30,9 +30,7 @@ The Demo: (https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-bad
 ├── requirements.txt                # Production Dependencies
 └── README.md                       # Project Documentation
 
-```
 
----
 
 ## 🛠️ Machine Learning Pipeline
 
