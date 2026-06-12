@@ -16,6 +16,13 @@ This project focuses on predicting the likelihood of heart disease in patients u
 
 ---
 
+## 📺 Video Demonstration
+Watch the application in action to see how patient clinical metrics are analyzed and processed in real-time:
+
+[![Watch the Demo](https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)](Insert_Your_YouTube_Video_Link_Here)
+
+*Alternative direct link: [Watch the project demo on YouTube](Insert_Your_YouTube_Video_Link_Here)*
+
 ## 📂 Repository Structure
 ```text
 ├── heart.csv                   # Original Dataset
