@@ -4,12 +4,23 @@
 Cardiovascular diseases (CVDs) remain the leading cause of mortality globally, accounting for millions of deaths annually. Early and accurate detection of heart conditions is critical for effective clinical intervention. This project leverages Machine Learning to analyze key biomedical features and physiological indicators, establishing an automated decision-support system that assists healthcare professionals in early screening and risk assessment.
 
 ## 📊 Dataset Specifications
-The predictive model is trained on a comprehensive heart disease dataset containing **918 patient observations** with **12 clinical attributes**. The dataset bridges demographic data with vital cardiovascular measurements:
-* **Demographic Metrics:** Age, Sex.
-* **Clinical Symptoms:** ChestPainType (TA, ATA, NAP, ASY), ExerciseAngina (Y/N).
-* **Cardiovascular Vitals:** RestingBP (Blood Pressure), Cholesterol, FastingBS (Blood Sugar).
-* **Electrocardiogram (ECG) Results:** RestingECG (Normal, ST, LVH), MaxHR (Maximum Heart Rate), Oldpeak, and ST_Slope.
-* **Target Class:** `HeartDisease` (1: Presence of heart disease, 0: Normal).
+
+The predictive model is trained on a comprehensive heart disease dataset containing **918 patient observations** with **12 clinical attributes**. Below is the detailed layout of the dataset features:
+
+| Feature Name | Data Type | Description | Valid Values / Units |
+| :--- | :--- | :--- | :--- |
+| **Age** | Numerical | Age of the patient | Years |
+| **Sex** | Categorical | Gender of the patient | M (Male), F (Female) |
+| **ChestPainType** | Categorical | Type of chest pain experienced | TA (Typical Angina), ATA (Atypical Angina), NAP (Non-Anginal Pain), ASY (Asymptomatic) |
+| **RestingBP** | Numerical | Resting blood pressure level | mm Hg |
+| **Cholesterol** | Numerical | Serum cholesterol level | mg/dl |
+| **FastingBS** | Categorical | Fasting blood sugar screening | 1 (If FastingBS > 120 mg/dl), 0 (Otherwise) |
+| **RestingECG** | Categorical | Resting electrocardiogram results | Normal, ST (ST-T wave abnormality), LVH (Left Ventricular Hypertrophy) |
+| **MaxHR** | Numerical | Maximum heart rate achieved | Beats per minute (60 - 202) |
+| **ExerciseAngina**| Categorical | Exercise-induced angina | Y (Yes), N (No) |
+| **Oldpeak** | Numerical | ST depression induced by exercise relative to rest | Numeric value |
+| **ST_Slope** | Categorical | The slope of the peak exercise ST segment | Up (Upsloping), Flat, Down (Downsloping) |
+| **HeartDisease** | Target (Binary)| Diagnostic output risk class | 1 (Presence of Heart Disease), 0 (Normal) |
 
 ## 💻 Web Application Features
 The system is deployed as an interactive clinical web application using the **Streamlit** framework. 
